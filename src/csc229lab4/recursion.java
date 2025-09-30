@@ -2,6 +2,7 @@ package csc229lab4;
 
 public class recursion {
 
+// print hello world n times recursively
 			    public static void printHelloWorld(int n) {
 			        if (n <= 0) {
 			            return;
@@ -9,7 +10,7 @@ public class recursion {
 			        System.out.println("Hello World");
 			        printHelloWorld(n - 1);
 			    }
-
+// return sum of all numbers between n1 and n2 that are multiples of 7
 			    public static int sumMultiplesOfSeven(int n1, int n2) {
 			        if (n1 > n2) {
 			            return 0;
@@ -20,7 +21,7 @@ public class recursion {
 			            return sumMultiplesOfSeven(n1 + 1, n2);
 			        }
 			    }
-
+// recursive binary search
 			    public static int binarySearch(int[] arr, int target, int low, int high) {
 			        if (low > high) {
 			            return -1;
@@ -34,7 +35,7 @@ public class recursion {
 			            return binarySearch(arr, target, mid + 1, high);
 			        }
 			    }
-
+// main method
 			    public static void main(String[] args) {
 			        System.out.println("---- Hello World ----");
 			        printHelloWorld(3);
